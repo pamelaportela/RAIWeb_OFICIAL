@@ -1,252 +1,39 @@
-* {
-    font-family: 'Cairo', sans-serif;
-}
-
-.bg-primary-color {
-    background-color: #05053F;
-}
-
-.bg-secondary-color {
-    background-color: #E6E6E6;
-}
-
-.primary-color {
-    color: #09CCCC;
-}
-
-.secondary-color {
-    color: #E6E6E6;
-}
-
-.card-primary-color {
-    color: #5C09AD;
-}
-
-.card-secondary-color {
-    color: #05053F;
-}
-
-#body {
-    background-color: #05053F;
-}
-
-/* NAVBAR */
-#navbar {
-    border-bottom: 1px solid #09CCCC;
-}
-
-#navbar a:hover {
-    color: #E6E6E6;
-}
-
-#navbar a.active {
-    border-bottom: 2px solid #E6E6E6;
-}
-
-.navbar-brand {
-    display: flex;
-}
-
-.navbar-brand img {
-    width: 200px;
-}
-
-.navbar-brand span {
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-left: 0.5em;
-}
-
-#navbar-items .navbar-nav {
-
-    display: flex;
-    justify-content: center;
+/*barra de navegacao*/
+.barra_de_navegacao_superior{
     width: 100%;
+    border-bottom: 5px solid #09CCCC ;
+    position: fixed;
+    background-color:  #05053F;
 }
 
-#navbar-items .nav-item {
-    margin: 0 1em;
+.caixa_da_barra_de_navegacao{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
 }
 
-/* SLIDER */
-#slider {
-    margin-top: 8em;
-    margin-bottom: 1em;
-}
-
-.btn {
-    border-radius: 0;
-}
-
-#slider .btn {
-    padding: 0.3 0.8em;
-    font-size: 1em;
-    margin-top: 1em;
-}
-
-.carousel-control-prev i,
-.carousel-control-next i {
-    color: #E6E6E6;
-    font-size: 3em;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #E6E6E6;
-    opacity: 0.8;
-}
-
-.carousel-indicators .active {
-    background-color: #09CCCC;
-}
-
-@media(min-width: 768px) {
-    #slider .carousel-caption {
-        bottom: 15em;
-    }
-
-    #slider .carousel-caption h5 {
-        font-size: 4em;
-        text-shadow: #000 2px 3px;
-    }
-
-    #slider .btn {
-        padding: 0.6 1.6em;
-        font-size: 1.2em;
-    }
-
-    .carousel-indicators {
-        bottom: 7em;
-    }
-}
-
-/* MINI BANNERS */
-#mini-banners {
-    margin-bottom: 4em;
-}
-
-#mini-banners .card {
-    padding: 2em 0.3em;
-    border-radius: 0;
-    margin-bottom: 1em;
-    background-color: #E6E6E6;
-}
-
-#mini-banners i {
-    font-size: 4em;
-}
-
-#mini-banners .card-title {
-    margin-bottom: 1.5em;
-}
-
-#mini-banners .btn {
-    margin-top: 1.5em;
-    padding: 0.6em 1.2em;
-}
-
-/* @media(min-width: 768px) {
-    #mini-banners {
-        margin-top: -6em;
-    }
-} */
-
-/* INFO */
-#info-content {
-    margin-bottom: 4em;
-    padding: 4em 1em;
-}
-
-#info-numbers {
-    margin: 1.5em 0;
-}
-
-#info-banner {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5em;
-}
-
-#info-numbers h3 {
-    font-size: 3em;
-}
-
-@media(min-width: 768px) {
-    #info-content {
-        padding: 3.5em;
-    }
-}
-
-/* PROJETOS */
-#featured-container {
-    margin-bottom: 4em;
-}
-
-.title {
-    font-size: 1.75em;
-    margin-bottom: 0.4em;
-    position: relative;
-}
-
-.title:before {
-    width: 75px;
-    content: "";
-    position: absolute;
-    bottom: 2em;
-}
-
-#featured-images {
-    margin-top: 2em;
-}
-
-#featured-images .col-md-4 {
-    position: relative;
-    cursor: pointer;
-}
-
-#featured-images .col-md-4:hover>.banner-content {
-    opacity: 0.8;
-}
-
-#featured-images .banner-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+.caixa_de_logo_raitec{
     height: 100%;
+    width: 50%;
+}
+
+
+.imagem_logo_raitec {
     width: 100%;
-    background-color: #E6E6E6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0.6;
-    transition: 0.5s;
 }
 
-@media(min-width: 768px) {
-    .title {
-        font-size: 2.4em;
-    }
-
-    .title:before {
-        bottom: 1.5em;
-    }
-
-    #featured-images .banner-content {
-        opacity: 0;
-    }
+.caixa_de_perfil_membro{
+    width: 18%;
+    margin-left: 80%;
 }
 
-/* ABOUT NOTEPAD */
-#about-notepad-container {
-    /* margin-bottom: 4em; */
-    padding: 4em 1em;
+.imagem_de_perfil{
+    width: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100%;
 }
 
-#np-icon {
-    font-size: 7em;
-    color: #09CCCC;
-}
-
-#np-icon:hover {
-    color: #E6E6E6;
+.imagem_de_perfil:hover{
+    border-color: #09CCCC;
 }
