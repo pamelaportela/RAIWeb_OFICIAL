@@ -1,0 +1,2 @@
+IMAGENS_SIMULADAS_DO_BANCO_DE_DADOS - É onde ficarão as imagens que futuramente ficarão no banco de dados
+IMAGENS GERAL - É onde ficarão as imagens em comum de todas as paginas
