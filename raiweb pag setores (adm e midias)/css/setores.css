@@ -1,0 +1,76 @@
+.caixa_setor {
+    text-align: center;
+    font-size: larger;
+}
+
+#caixa_avisos {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#card_avisos {
+    padding: 1em;
+}
+
+#caixa_agenda {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+textarea.avisos
+{
+
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    color: #5C09AD;
+    background-color: #e6e6e6;
+
+    /* word-wrap: break-word; */
+
+
+    font-style: normal;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+
+    font-family: 'Cairo',sans-serif;
+
+    padding-left: 25px;  /*margem para esquerda*/
+    padding-right: 25px; /*margem para direita*/
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    border: #141414;
+    outline: none;
+
+}
+
+#calendario {
+    color: #E6E6E6;
+    border-color: #09CCCC;
+}
+
+#calendario-head {
+    color: #09CCCC;
+    border-color: #09CCCC;
+    border-bottom: 3px solid;
+    text-align: center;
+}
+
+#celula {
+    text-align: left;
+    /* padding-top: 3em; */
+    padding-bottom: 6em;
+    padding-right: 0em;
+    width: 30em;
+}
+
+#cel-vazia {
+    color: #09CCCC;
+}
+
+#test {
+    color: red;
+}
