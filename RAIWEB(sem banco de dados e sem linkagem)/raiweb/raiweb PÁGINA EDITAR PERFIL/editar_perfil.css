@@ -153,6 +153,19 @@ button:hover{
 
 /**mudar senha**/
 
+.nova_senha{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    margin-left: 33%;
+    border: none;
+    outline: none;
+    resize: none;   color: white;
+    height: 30px;
+    width: 50%;
+  
+} ::-ms-reveal {
+    filter: invert(100%);
+  }
 .caixa_de_mudar_restantes{
     margin-top: 0;
     margin-right: 20%;
