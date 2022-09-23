@@ -69,43 +69,43 @@
     <!--colocar nome-->
     <div class="caixa_de_mudar_nome">
         <h1>Nome:</h1>
-        <input class="area_para_nome" type="text" value="Nome do membro"></input>
+        <input class="area_para_nome" type="text" value="Nome do membro" id="nome" onclick="remover_conteudo(id)"></input>
     </div>
 
     <!--E-mail-->
     <div class="caixa_de_mudar_restantes">
         <h1>Email:</h1>
-        <input class="area_para_nome" type="text" value="OReiDasCapivaras@outlook.com"></input>   
+        <input class="area_para_nome" type="text" value="OReiDasCapivaras@outlook.com" value="André O Rei Delas" id="email" onclick="remover_conteudo(id)"></input>   
      </div>
     <!--Senha-->
     <div class="caixa_de_mudar_restantes">
         <h1>Senha:</h1>
-        <input class="area_para_nome" type="password" value="André O Rei Delas" id="senha"></input>   
+        <input class="area_para_nome" type="password" value="André O Rei Delas" id="senha" onclick="remover_conteudo(id)"></input>   
      </div>
 
     <!--Confirmar-Senha-->
     <div class="caixa_de_mudar_restantes">
         <h1>Confirmar Senha:</h1>
-        <input class="area_para_nome" type="password" value="Sonegar Imposto é dever moral" id="confimacao_de_senha"></input>    
+        <input class="area_para_nome" type="password" value="Sonegar Imposto é dever moral" id="confimacao_de_senha" onclick="remover_conteudo(id)"></input>    
     </div>
 
     <!-- Matricula-->
     <div class="caixa_de_mudar_restantes">
         <h1>Número de Matricula:</h1>
-        <input class="area_para_nome" type="text" value="Insira o número de matricula"></input>    
+        <input class="area_para_nome" type="text" value="Insira o número de matricula" id="matricula" onclick="remover_conteudo('matricula')"></input>    
     </div>
 
             <!-- CPF-->
     <div class="caixa_de_mudar_restantes">
         <h1>CPF:</h1>
-        <input class="area_para_nome" type="text" value="Insira o número de CPF"></input>    
+        <input class="area_para_nome" type="text" autocomplete="off" maxlength="14" value="Insira o número de CPF" id="cpf" onclick="remover_conteudo('cpf')" onkeypress="return filtro_teclas(event)"></input>    
     </div>
 
 
     <!-- Dado Aleatorio-->
     <div class="caixa_de_mudar_restantes">
         <h1>Dado aleatório futuro</h1>
-        <input class="area_para_nome" type="text" value="CPF? Numero? Data? O Sentido da vida? 42"></input>    
+        <input class="area_para_nome" type="text" value="CPF? Numero? Data? O Sentido da vida? 42" id="dado" onclick="remover_conteudo(id)"></input>    
     </div>
 
 
@@ -124,7 +124,7 @@
     <!--botoes de salvar ou cancelar-->
     <div class="caixa_de_botoes">
         <a>
-            <button class="botao" onclick="gerar_senha(), comparar_senhas()">Salvar</button>
+            <button class="botao" onclick="gerar_senha(), comparar_senhas(),validacao_cpf()">Salvar</button>
         </a>
         <a>
             <button class="botao">Cancelar</button>
@@ -133,4 +133,5 @@
 </div>
 
 </body>
+<script src="adicionar_perfil.js"></script>
 </html>
