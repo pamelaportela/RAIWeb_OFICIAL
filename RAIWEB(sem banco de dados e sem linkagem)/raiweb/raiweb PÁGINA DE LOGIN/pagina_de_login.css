@@ -60,7 +60,16 @@ button:hover{
     color: #05053F;
 }
 
+a{
+    text-decoration: none;
+    font-size: small;
+    margin-right: 4%;
+    color: #09CCCC;
+}
 
+a:hover{
+    color: white;
+}
 /*CORPO DA PAGINA*/
 
 .corpo_da_pagina{
