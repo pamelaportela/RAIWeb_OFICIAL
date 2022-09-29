@@ -34,8 +34,8 @@
 
 
 <!--conteudo da pagina-->
-<div class="corpo_da_pagina">
-    <div class="elementos_da_pagina">
+<div class="corpo_da_pagina" id="corpo">
+    <div class="elementos_da_pagina" id="elementos">
 <!-- logo do raitec -->
     <img src="../imagens_gerais/ciano_nome_lado.png" class="logo_raitec">
     <h1>Entrar no Sistema</h1>
@@ -48,10 +48,12 @@
         <input type="password" id="senha" class="senha2">
     </div>
     <div>
-        <a href="#">esqueci minha senha</a>
+        <a href="#" onclick= 'problema()'>esqueci minha senha</a>
     </div>
-    <button onclick="login()">Login</button>
+    <button onclick="login()" id="botao">Login</button>
     </div>
+    <div id="elemento_a_frente"><p>oids</p></div>
+    <a href="#" id="foo"></a>
 </div>
 
 </body>
