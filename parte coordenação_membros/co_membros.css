@@ -1,0 +1,177 @@
+/*desings gerais*/
+*{
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    font-size: large;
+    position: relative;
+}
+body{
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    background-color: #05053F;
+}
+
+
+
+
+/*Corpo do site*/
+.caixa_de_membros{  /* <!---Caixa da parte de membros--> */
+    margin-top: 5%;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    
+}
+
+/* lugar onde ficam os filtros */
+.caixa_dos_filtros_por_setor{
+    text-align: center;
+    margin-bottom:5%; 
+    display: inline-block;
+    width: 500px;
+}
+.filtro_membro_por_setor{
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    margin-left: 1%;
+    border-radius:10px ;
+}
+
+/* .filtro:focus{
+ background-color: rgba(136, 3, 136, 0.733);;
+ color: white;
+
+} */
+
+/* parte de membros */
+
+.caixa_lista_de_membros{
+    display: list-item;
+}
+
+.barra_de_procurar{
+    background-color: white;
+    border-radius: 100px;
+
+}
+
+.membro_da_lista{
+    display: inline-flex;
+    font-size: large;
+    list-style: none;
+    background-color: white;
+    margin-top: 5%;
+    border-radius:30px ;
+    width: 500px;
+    height: 125px;
+    text-align: left;
+    word-wrap: break-word;
+
+}
+
+.caixa_nome_dos_membros{
+    width: 200;
+    height: 125px;
+    background-color: transparent;
+    border-radius: 30px;
+}
+/* elementos que aparecem dentro da caixa do membro */
+
+.caixa_nome_e_foto{
+    background-color: transparent;
+    display: inline-flex;
+    width: 280px;
+
+}
+.fotos_dos_membros{
+    margin-top: 4%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.nome_membro{
+    background-color: transparent;
+    min-width: 175px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: 30px;
+    margin-top: 5%;
+}
+.caixa_strikes{
+    width: 100px;
+    margin-left: 5%;
+    display: inline-flex;
+    max-height: 100px;
+    background-color: transparent;
+
+}
+.fa-star{
+    color: yellow;
+    background-color: transparent;
+    font-size: xx-large;
+    
+}
+
+
+.caixa_de_tags{
+    height: 100px;
+    width: 230px;
+    margin-top: 2%;
+    background-color: transparent;
+    text-align: left;
+    overflow: hidden;
+}
+
+.tarefa{
+    display: inline-block;
+    background-color: purple ;
+    text-align: center;
+    color: white;
+    width: 80px ;
+    min-width: 80px ;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+/* essas configuracoes colocam os 3 pontos no final */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tarefa:active{
+    min-width: fit-content;
+    max-width: none;
+    
+}
+
+.caixa_metade_1_da_parte_dos_membros{
+    display: inline-block;
+    width: 50%;
+}
+
+.caixa_filtro_por_projeto{
+    margin-top: 10%;
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    
+
+}
+
+.filtro_membro_por_tarefa{
+    display: block;
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    margin-left: 1%;
+    border-radius:10px ;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
