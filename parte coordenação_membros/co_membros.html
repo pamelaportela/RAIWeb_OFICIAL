@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+    />
+
+    <!-- icones do font_awesome -->
+    <script src="https://kit.fontawesome.com/eb548b5f0a.js" crossorigin="anonymous"></script>
+
+    <!--icones do boostrap-->
+    <link rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <!-- style -->
+    <link  rel="stylesheet", href="co_membros.css" />
+
+    <!-- link javascript -->
+    <script src="co_membros.js"></script>
+</head>
+<body>
+
+<div class="caixa_sessao">
+<h1 class="titulo_de_sessão">Membros</h1>
+<div class="caixa_de_membros" id="pai_dos_membros"> <!---Caixa da parte de membros-->
+    <!-- aqui e onde ficara os filtros por setor -->
+<div class="caixa_metade_1_da_parte_dos_membros"> <!--A outra metade eh a dos filtros por projeto-->
+    
+    <div class="caixa_dos_filtros_por_setor">
+        <!-- Parte com a barra de procura e -->
+        <input id="barra_de_pesquisar_membro" onkeyup="buscar_item('membro_da_lista', 'barra_de_pesquisar_membro')" type="text" placeholder="procurar" class="barra_de_procurar">
+
+        <!-- a funcao manda a classe das tags que estao sendo pesquisadas, o filtro e a classe dos botoes de filtro-->
+        <button class="filtro_membro_por_setor" onclick="filtrar_lista('membro_da_lista', id, name)" value="inovacao" id="filtro_inovacao" name="filtro_de_membro"> Inovação</button>
+        <button class="filtro_membro_por_setor" onclick="filtrar_lista('membro_da_lista', id, name)" value="grp" id="filtro_adm" name="filtro_de_membro">GRP</button>
+        <button class="filtro_membro_por_setor" onclick="filtrar_lista('membro_da_lista', id, name)" on value="midias" id="filtro_midias" name="filtro_de_membro">Mídias</button>
+
+
+    </div>
+    <!--  a lista de membros -->
+
+    <!-- MODAL COM OS DETALHES DO MEMBRO, SERA AIVO AO CLICAR -->
+    <div class="detalhes" id="detalhes_membro">
+        <div class="caixa_parte_superior_detalhes">
+        <div class="caixa_foto_e_projeto">
+            <a><img src="https://sm.ign.com/t/ign_br/screenshot/default/goku_an6e.h720.jpg" class="detalhes_fotos_dos_membros"></a>
+            <div class="detalhes_caixa_strikes"> <!---quantidade de strikes -->
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <a><p class = "detalhe_tarefa">Twitter</p></a>
+        </div>
+
+        <div class="detalhes_caixa_nome_e_dados">
+            <a href="https://www.youtube.com/watch?v=sWpYSwmlLJc"  target="_blank" class="ancora_link_membro"><h1 class="detalhe_nome" id="nome">Nome do Membro</h1></a>
+            <p class="info-usuario">Membro desde Agosto de 2021</p>
+            <p class="info-usuario">Engenharia</p>
+            <p class="info-usuario">Aniversário:</p>
+            <p class="info-usuario">Email:</p>
+            <p class="info-usuario">(85)0000-0000</p>
+        </div>
+
+        <div class="caixa_botao_de_fechar">
+        <button onclick="fechar(id)" class="botao_de_fechar" id="fechar_detalhes_membro">X</button>
+        </div>
+    </div>
+    <div class="caixa_detalhes_horas_trabalhadas"> 
+        <div class="caixa_detalhes_hora">
+            <p>Total de horas no mês de</p>
+        </div>        
+        <div class="caixa_grafico_horas">
+            <img class ='grafico' src="https://miro.medium.com/max/595/1*1hbWqXXpmt4haUhI4JdjbA.jpeg">
+        </div>
+    </div>
+    </div>
+
+
+    <!--LISTA DE MEMBROS-->
+    <div class="caixa_lista_de_membros" >
+
+        <!-- lista de membros -->
+
+        <!-- os dados de class, de value, e o que está escrito na tag sao muito importantes para a barra de pesquisa -->
+
+        <button class="membro_da_lista" value="midias" id="goku" onclick="ver_detalhes(id, 'detalhes_membro')">
+            <div class="caixa_nome_dos_membros">
+                <div class="caixa_nome_e_foto">
+                    <img src="https://sm.ign.com/t/ign_br/screenshot/default/goku_an6e.h720.jpg" class="fotos_dos_membros"> <!-- foto do membro  -->
+                    <p class="nome_membro">Goku</p>
+                </div> <!-- nome do membro  -->
+                <div class="caixa_strikes"> <!---quantidade de strikes -->
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="caixa_de_tags">
+                <p class = "tarefa"> Twitter</p> <!---Atividade/projeto que o membro faz parte-->
+                <p class= "tarefa"> Rede Globo</p>
+            </div> 
+        </button>
+
+        <button class="membro_da_lista" value="grp" id="???" onclick="ver_detalhes(id, 'detalhes_membro')">
+            <div class="caixa_nome_dos_membros">
+                <div class="caixa_nome_e_foto">
+                    <img src="" class="fotos_dos_membros"> <!-- foto do membro  -->
+                    <p class="nome_membro">???</p>
+                </div> <!-- nome do membro  -->
+                <div class="caixa_strikes"> <!---quantidade de strikes -->
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="caixa_de_tags">
+                <p class = "tarefa"> ???</p> <!---Atividade/projeto que o membro faz parte-->
+                <p class= "tarefa" > ???? </p>
+            </div> 
+        </button>
+
+        <button class="membro_da_lista" value="inovacao" id="andre" onclick="ver_detalhes(id, 'detalhes_membro')">
+            <div class="caixa_nome_dos_membros">
+                <div class="caixa_nome_e_foto">
+                    <img src="https://aloalobahia.com/images/p/Eduardo%20Costa%20cantor%20sertanejo%20Instagram.jpg" class="fotos_dos_membros">
+                     <p class="nome_membro"> André Depois da Harmonização facial</p>
+                </div>
+                
+                <div class="caixa_strikes">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>       
+        </div>
+        <div class="caixa_de_tags">
+            <div class = "tarefa"> Raiweb</div>
+            <div class= "tarefa"> Dtec</div>
+            <div class= "tarefa"> Automação da Pista</div>
+            <div class= "tarefa"> D game</div>
+        </div>
+        </button>
+
+        <button class="membro_da_lista" value="midias" id="sr_picanha" onclick="ver_detalhes(id, 'detalhes_membro')">
+        <div class="caixa_nome_dos_membros" > 
+            <div class="caixa_nome_e_foto">  
+                <img src="https://s2.glbimg.com/dD68GzESItb3eZd4l89MCTLpMls=/0x0:720x482/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/S/c/miI5oXQpi9mCf7ZzR8yw/arroba-do-boi-sonhar-com-boi.jpeg" class="fotos_dos_membros">
+            
+                <p class="nome_membro">Sr. Picanha</p>
+            </div>
+            <div class="caixa_strikes">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="caixa_de_tags">
+            <p class = "tarefa" > Youtube</p>
+            <p class= "tarefa"> Instagram</p>
+        </div>
+        </button>
+    
+        <button class="membro_da_lista" value="grp"  id="homem_bom" onclick="ver_detalhes(id, 'detalhes_membro')">
+    <div class="caixa_nome_dos_membros">   
+        <div class="caixa_nome_e_foto">
+
+        
+            <img src='https://www.looper.com/img/gallery/saul-goodmans-best-one-liners-from-better-call-saul/l-intro-1661431638.jpg' class="fotos_dos_membros">
+
+        
+            <p class="nome_membro">Homem Bom</p>
+        </div>
+        <div class="caixa_strikes">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+    <div class="caixa_de_tags">
+        <p class = "tarefa"> Planilha</p>
+        <p class= "tarefa"> Processo</p>
+    </div>
+    
+        </button>
+
+
+        <button class="membro_da_lista" value="inovacao" id="silvestre" onclick="ver_detalhes(id, 'detalhes_membro')">
+        <div class="caixa_nome_dos_membros">
+            <div class="caixa_nome_e_foto">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Sylvester_Stallone_Cannes_2019.jpg" class="fotos_dos_membros">
+                 <p class="nome_membro"> Silvestre</p>
+            </div>
+            
+            <div class="caixa_strikes">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>       
+    </div>
+    <div class="caixa_de_tags">
+        <div class = "tarefa"> Coordenação</div>
+        <div class= "tarefa"> Dtec</div>
+    </div>
+        </button>
+
+    
+    </div>
+</div>
+    <!-- FILTROS POR AIVIDADE/PROJETO -->
+    <div class="caixa_filtro_por_projeto">
+        <button class="filtro_membro_por_tarefa" onclick="filtrar_lista('membro_da_lista', id, name)" value="Dtec" id="filtro_Dtec" name="filtro_de_membro"
+        > Dtec</button>
+
+        <button class="filtro_membro_por_tarefa" onclick="filtrar_lista('membro_da_lista', id, name)" value="Youtube" id="filtro_youtube" name="filtro_de_membro">Youtube</button>
+
+        <button class="filtro_membro_por_tarefa" onclick="filtrar_lista('membro_da_lista', id, name)" value="planilha" id="filtro_planilha" name="filtro_de_membro">Planilha</button>
+
+        <button class="filtro_membro_por_tarefa" onclick="filtrar_lista('membro_da_lista', id, name)" value="pista" id="filtro_pista" name="filtro_de_membro">Automação da Pista</button>
+
+        <button class="filtro_membro_por_tarefa" onclick="filtrar_lista('membro_da_lista', id, name)" value="coordenacao" id="filtro_coordenacao" name="filtro_de_membro">Cordenação</button>
+    </div>
+</div>
+    
+
+</div>
+</div>
+
+</body>
+</html>
