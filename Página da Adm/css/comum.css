@@ -1,0 +1,104 @@
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+.bg-primary-color {
+    background-color: #05053F;
+}
+
+.bg-secondary-color {
+    background-color: #E6E6E6;
+}
+
+.primary-color {
+    color: #09CCCC;
+}
+
+.secondary-color {
+    color: #E6E6E6;
+}
+
+.card-primary-color {
+    color: #5C09AD;
+}
+
+.card-secondary-color {
+    color: #05053F;
+}
+
+#body {
+    background-color: #05053F;
+}
+
+
+
+/* NAVBAR */
+.barra_de_navegacao_superior{
+    width: 100%;
+    border-bottom: 5px solid #09CCCC ;
+    /* position: fixed; */
+    background-color:  #05053F;
+}
+
+.caixa_da_barra_de_navegacao{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+
+.caixa_de_logo_raitec{
+    height: 100%;
+    width: 50%;
+}
+
+.imagem_logo_raitec {
+    width: 100%;
+}
+
+.caixa_de_perfil_membro{
+    width: 18%;
+    margin-left: 80%;
+}
+
+.imagem_de_perfil{
+    width: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100%;
+}
+
+.imagem_de_perfil:hover{
+    border-color: #09CCCC;
+}
+
+
+
+/* LINKS */
+#boas_vindas {
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+#mini-banners {
+    margin-bottom: 4em;
+}
+
+#mini-banners .card {
+    /* padding: 2em 0.3em; */
+    border-radius: 0;
+    margin-bottom: 1em;
+    background-color: #05053F;
+}
+
+#mini-banners i {
+    font-size: 4.5em;
+}
+
+#mini-banners .card-title {
+    margin-bottom: 1em;
+}
+
+#icons:hover {
+    color: #09CCCC;
+}
