@@ -1,0 +1,144 @@
+.caixa_titulo {
+    text-align: center;
+    font-size: larger;
+}
+
+.caixa_setor {
+    text-align: center;
+    font-size: larger;
+    color: #05053F;
+    background-color: #E6E6E6;
+    width: 6em;
+}
+
+.caixa_setor:hover {
+    background-color: #09CCCC;
+}
+
+.caixa_setor_atual {
+    text-align: center;
+    font-size: larger;
+    color: #E6E6E6;
+    background-color: #5C09AD;
+    width: 6em;
+}
+
+.caixa_setor_atual:hover {
+    color: #05053F;
+    background-color: #09CCCC;
+}
+
+#icone_editar {
+    text-align: center;
+}
+
+#icone_editar i {
+    font-size: 2em;
+}
+
+/* CORES DOS EVENTOS */
+
+.cor-rg {
+    color: #ef7575;
+}
+
+.cor-reuniao {
+    color: #a3baff;
+}
+
+.cor-capacitacao {
+    color: #f8bf69;
+}
+
+.cor-outros {
+    color: #f5ffa3;
+}
+
+/* PARTE DE EVENTOS */
+
+.novo-evento {
+    background-color: #E6E6E6;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.caixa-input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.caixa-input:focus {
+    outline: none;
+    border-color: #5C09AD;
+}
+
+.tipo-evento {
+    display: block;
+    text-align: left;
+}
+
+.botao-tipo {
+    border-radius: 100px;
+    margin-left: 2%;
+    accent-color: #5C09AD;
+}
+
+.botao-adicionar {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #5C09AD;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.lista-eventos {
+    background-color: #E6E6E6;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.evento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.data-evento {
+    display: flex;
+    justify-content: space-between;
+    min-width: 110px;
+}
+
+.icones-evento {
+    display: flex;
+    justify-content: space-between;
+    min-width: 60px;
+}
+
+.botao-editar {
+    color: #5C09AD;
+    border: none;
+    background-color: transparent;
+}
+
+.botao-remover {
+    color: red;
+    border: none;
+    background-color: transparent;
+}

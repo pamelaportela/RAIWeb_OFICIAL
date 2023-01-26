@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RAIWeb - Inovação</title>
+        <link rel="shortcut icon" href="img/dark_logo.png" type="image/x-icon">
+
+        <!-- Google Fonts - Cairo Regular -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+        />
+
+        <!-- CSS do projeto -->
+        <link rel="stylesheet" href="../css/shared/comum.css">
+        <link rel="stylesheet" href="../css/shared/setores.css">
+        <link rel="stylesheet" href="../css/shared/calendario.css">
+
+        <!-- JavaScript Bootstrap -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+        <!--Javascript Projetos-->
+        <script src="js/projetos.js"></script>
+
+    </head>
+
+    <body class="bg-primary-color">
+        <!-- NAVBAR -->
+        <nav class="barra_de_navegacao_superior">
+            <link rel="icon" type="image/png" href="../media/pictures/dark_logo.png"/>
+            <div class="caixa_da_barra_de_navegacao">
+                <!--logo raitec-->
+                <div class="caixa_de_logo_raitec">
+                    <a href="../html/principal.html" class="ancora_logo_raitec"> <!--CASO QUEIRAM COLOCAR ANCORA-->
+                        <img src="../media/pictures/ciano_nome_lado.png" class="imagem_logo_raitec"/>
+                    </a>
+                </div>
+                <!--icone de perfil-->
+                <div class="caixa_de_perfil_membro">
+                    <a href="../html/perfil_do_membro.html" class="ancora__perfil_membro"> <!--INSERIR LINK PARA PERFIL DO MEMBRO!!!!!!!!!! -->
+                        <img src="../media/pictures/dudu_perfil.jpg" class="imagem_de_perfil"/>
+                    </a>
+                </div>
+            </div>
+        
+        </nav>
+
+        <!-- NOME DO SETOR -->
+        <div class="caixa_setor" style="padding-top: 100px;">
+            <h1 class="primary-color">Inovação</h1>
+        </div>
+
+        <!-- AVISOS -->
+        <div class="container" id="caixa_avisos">
+            <div class="col-12">
+                <h2 class="title primary-color">Avisos importantes</h2>
+                
+                <div class="col-12 col-md-12 bg-secondary-color" id="card_avisos">
+                    <div class="col-12">
+                        <!-- AQUI ENTRA O TEXTO DO BANCO DE DADOS -->
+                        <h4 class=" card-primary-color"> - Aviso 1 <br> - Aviso 2 <br> - Aviso 3</h4>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- AGENDA -->
+        <div class="container" id="caixa_agenda">
+            <div class="col-12">
+                <h2 class="title primary-color">Agenda de reuniões</h2>
+            </div>
+        </div>
+
+        <!-- CALENDÁRIO EM SI -->
+        <div class="container">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-7" id="teste-1">
+                        <!-- CALENDÁRIO -->
+                        <div class="container-cal">
+                            <div class="calendario">
+                                <div class="mes">
+                                    <i class="bi bi-chevron-left prev"></i> <!-- seta para o mês anterior -->
+                                    <div class="data">
+                                        <h1></h1> <!-- mostrar o mês -->
+                                        <p></p> <!-- mostrar o dia -->
+                                    </div>
+                                    <i class="bi bi-chevron-right next"></i> <!-- seta para o mês seguinte -->
+                                </div>
+                                <div class="dias-semana">
+                                    <div>Dom</div>
+                                    <div>Seg</div>
+                                    <div>Ter</div>
+                                    <div>Qua</div>
+                                    <div>Qui</div>
+                                    <div>Sex</div>
+                                    <div>Sab</div>
+                                </div>
+                                <div class="dias">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5" id="lista-eventos">
+                        <!-- LISTA DE EVENTOS -->
+                        <div class="titulo"> 
+                            <h1>Eventos do Mês</h1>
+                        </div>
+                        <div class="dias-eventos">
+                            <!-- é aqui que o js age e escreve o código dos eventos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projetos -->
+            <div class="container" >
+                <h2 class="title primary-color">Projetos</h2>
+            </div>
+
+    <div class="container" id="featured-container" >
+        
+        <div class="col-12" id="featured-images">
+            <div class="row g-4" id="mural_projetos">
+                <div class="col-12 col-md-4">
+                    <img src="img/projeto.JPG" alt="Projeto 1" class="img-fluid">
+                    <div class="banner-content">
+                        
+                        <h3 class="card-primary-color">Projeto</h3>
+                        <h3 class="card-primary-color">Iniciado em: xx/xx/xx</h3>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/projeto.JPG" alt="Projeto 2" class="img-fluid">
+                    <div class="banner-content">
+                        <h3 class="card-primary-color">Projeto</h3>
+                        <h3 class="card-primary-color">Iniciado em: xx/xx/xx</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/projeto.JPG" alt="Projeto 3" class="img-fluid">
+                    <div class="banner-content">
+                        <h3 class="card-primary-color">Projeto</h3>
+                        <h3 class="card-primary-color">Iniciado em: xx/xx/xx</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/projeto.JPG" alt="Projeto 4" class="img-fluid">
+                    <div class="banner-content">
+                        <h3 class="card-primary-color">Projeto</h3>
+                        <h3 class="card-primary-color">Iniciado em: xx/xx/xx</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/projeto.JPG" alt="Projeto 5" class="img-fluid">
+                    <div class="banner-content">
+                        <h3 class="card-primary-color">Projeto</h3>
+                        <h3 class="card-primary-color">Iniciado em: xx/xx/xx</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/projeto.JPG" alt="Projeto 6" class="img-fluid">
+                    <div class="banner-content">
+                        <h3 class="card-primary-color">Projeto</h3>
+                        <h3 class="card-primary-color">Iniciado em: xx/xx/xx</h3>
+                    </div>
+                </div>
+                
+                <button type="button" id="botao_projeto" class="botao" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">  <i class="bi-plus-circle"></i> </button>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <!-- MODAL PARA NOVO PROJETO -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="exampleModalLabel">Novo Projeto</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+  
+                        <div class="form-group">
+                            <label for="data">Data</label>
+                            <div class="form-inline">
+                                <div class="form-group mx-2">
+                                    <div class=input-group>
+                                        <input class=form-control name="validade" type="date">
+                                        <span style="background: #4ECDC4; color: #fff;"  class=input-group-addon> <i class="fa fa-calendar"></i> 
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    
+        $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      modal.find('.modal-title').text('New message to ' + recipient)
+      modal.find('.modal-body input').val(recipient)
+    })
+    </script>
+
+    <script src="js/calendario.js"></script>
+
+    <script src="js/projetos.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RAIWeb - Administração</title>
+        <link rel="shortcut icon" href="../media/pictures/dark_logo.png" type="image/x-icon">
+
+        <!-- Google Fonts - Cairo Regular -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+        />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/ed4bd4e81c.js" crossorigin="anonymous"></script>
+        
+
+        <!-- CSS do projeto -->
+        <link rel="stylesheet" href="../css/shared/comum.css">
+        <link rel="stylesheet" href="../css/shared/setores.css">
+        <link rel="stylesheet" href="../css/shared/calendario.css">
+
+        <!-- JavaScript Bootstrap -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body class="bg-primary-color">
+        <!-- NAVBAR -->
+        <nav class="barra_de_navegacao_superior">
+            <link rel="icon" type="image/png" href="../media/pictures/dark_logo.png"/>
+            <div class="caixa_da_barra_de_navegacao">
+                <!--logo raitec-->
+                <div class="caixa_de_logo_raitec">
+                    <a href="../html/principal.html" class="ancora_logo_raitec"> <!--CASO QUEIRAM COLOCAR ANCORA-->
+                        <img src="../media/pictures/ciano_nome_lado.png" class="imagem_logo_raitec"/>
+                    </a>
+                </div>
+                <!--icone de perfil-->
+                <div class="caixa_de_perfil_membro">
+                    <a href="../html/perfil_do_membro.html" class="ancora__perfil_membro"> <!--INSERIR LINK PARA PERFIL DO MEMBRO!!!!!!!!!! -->
+                        <img src="../media/pictures/dudu_perfil.jpg" class="imagem_de_perfil"/>
+                    </a>
+                </div>
+            </div>
+        
+        </nav>
+
+        <!-- NOME DO SETOR -->
+        <div class="caixa_setor">
+            <h1 class="primary-color">Administração</h1>
+        </div>
+
+        <!-- AVISOS -->
+        <div class="container" id="caixa_avisos">
+            <div class="col-12">
+                <h2 class="title primary-color">Avisos importantes</h2>
+                
+                <div class="col-12 col-md-12 bg-secondary-color" id="card_avisos">
+                    <div class="col-12">
+                        <!-- AQUI ENTRA O TEXTO DO BANCO DE DADOS -->
+                        <h4 class="title card-primary-color"> - Aviso 1 <br> - Aviso 2 <br> - Aviso 3</h4>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- AGENDA -->
+        <div class="container" id="caixa_agenda">
+            <div class="col-12">
+                <h2 class="title primary-color">Agenda de reuniões</h2>
+            </div>
+        </div>
+
+        <!-- CALENDÁRIO EM SI -->
+        <div class="container">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-7" id="teste-1">
+                        <!-- CALENDÁRIO -->
+                        <div class="container-cal">
+                            <div class="calendario">
+                                <div class="mes">
+                                    <i class="bi bi-chevron-left prev"></i> <!-- seta para o mês anterior -->
+                                    <div class="data">
+                                        <h1></h1> <!-- mostrar o mês -->
+                                        <p></p> <!-- mostrar o dia -->
+                                    </div>
+                                    <i class="bi bi-chevron-right next"></i> <!-- seta para o mês seguinte -->
+                                </div>
+                                <div class="dias-semana">
+                                    <div>Dom</div>
+                                    <div>Seg</div>
+                                    <div>Ter</div>
+                                    <div>Qua</div>
+                                    <div>Qui</div>
+                                    <div>Sex</div>
+                                    <div>Sab</div>
+                                </div>
+                                <div class="dias">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5" id="lista-eventos">
+                        <!-- LISTA DE EVENTOS -->
+                        <div class="titulo"> 
+                            <h1>Eventos do Mês</h1>
+                        </div>
+                        <div class="dias-eventos">
+                            <!-- é aqui que o js age e escreve o código dos eventos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Links Importantes -->
+<!-- LINKS IMPORTANTES -->
+<div class="container" id="caixa_links">
+    <div class="col-12">
+        <h2 class="title primary-color">Links importantes</h2>
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row container">
+
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <a href="adm.html">
+                            <i class="fa-regular fa-calendar-days secondary-color" id="icons"></i>
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title primary-color">Planilha One a One</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <a href="adm.html">
+                            <i class="fa-regular fa-calendar-days secondary-color" id="icons"></i>
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title primary-color">Planilha de membros</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <a href="adm.html">
+                            <i class="fa-solid fa-c secondary-color" id="icons"></i>
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title primary-color" id="icons">Templates</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <a href="adm.html">
+                            <i class="fa-solid fa-n secondary-color" id="icons"></i>
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title primary-color">Notion</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <a href="adm.html">
+                            <i class="fa-brands fa-google-drive secondary-color" id="icons"></i>
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title primary-color">Drive</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <script src="../js/calendario.js"></script>
+
+    </body>
+</html>

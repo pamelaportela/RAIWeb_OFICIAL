@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+
+    <!--Javascript-->
+    <script src="../js/projeto.js"></script>
+
+    <!-- css bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+    />
+
+    <!-- icones do font_awesome -->
+    <script src="https://kit.fontawesome.com/eb548b5f0a.js" crossorigin="anonymous"></script>
+
+    <!--icones do boostrap-->
+    <link rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <!-- style -->
+    <link  rel="stylesheet", href="../css/projeto.css" />
+
+</head>
+<body>
+<div class="oi"></div>
+<!--barra de navegacao -->
+<nav class="barra_de_navegacao_superior">
+    <link rel="icon" type="image/png" href="../media/pictures/dark_logo.png"/>
+    <div class="caixa_da_barra_de_navegacao">
+        <!--logo raitec-->
+        <div class="caixa_de_logo_raitec">
+            <a href="../html/principal.html" class="ancora_logo_raitec"> <!--CASO QUEIRAM COLOCAR ANCORA-->
+                <img src="../media/pictures/ciano_nome_lado.png" class="imagem_logo_raitec"/>
+            </a>
+        </div>
+        <!--icone de perfil-->
+        <div class="caixa_de_perfil_membro">
+            <a href="../html/perfil_do_membro.html" class="ancora__perfil_membro"> <!--INSERIR LINK PARA PERFIL DO MEMBRO!!!!!!!!!! -->
+                <img src="../media/pictures/dudu_perfil.jpg" class="imagem_de_perfil"/>
+            </a>
+        </div>
+    </div>
+
+</nav>
+<!--corpo do site-->
+<div class="corpo_da_pagina">
+    <div class="caixa_do_conteudo_da_pagina">
+<!--area 1 contempla a foto do projeto e datas-->
+        <div class="caixa_area_1"> 
+            <div class="caixa_foto_do_projeto">
+                <img src="../media/pictures/projeto.JPG" class="foto_do_projeto">
+            </div>
+
+            <div class="caixa_nome_e_tempo">
+                <h1 class="nome_do_projeto">Nome do Projeto</h1> <!--NO FUTURO TALVEZ TENHA QUE TRANSFORMAR EM TEXT AREA-->
+                <p class="data">Data de inicio: XX/XX/XXXX</p>
+                <p class="data">Data de estimada de término: XX/XX/XXXX</p>
+                <!--barra de progresso-->
+                <div class="barra_de_progresso" id="barra_de_progresso"></div>
+            </div>
+        </div>
+<!--area 2 contempla membros do projeto-->
+        <div class = "caixa_area_2">
+            <h1>Membros</h1>
+            <div class="caixa_foto_dos_membros">
+                <a href="perfil_do_membro.html" class="ancora_perfil_membro">
+                    <!--foto do membro-->
+                    <img src="../media/pictures/dudu_perfil.jpg" class="membro">
+                </a>
+
+            </div>
+        </div>
+
+<!--area 3 contempla a definicao do projeto-->
+        <div class = "caixa_area_3">
+            <h1>Definição</h1>
+            <p class="texto_definicao">O conceito de projeto, do latim project,do francês projet, do alemão Projekt, do inglês project, do japonês じぎょう, do espanhol proyecto O conceito de projeto, do latim project, do francês projet, do alemão Projekt, do inglês project, do japonês じぎょう, do espanhol proyecto O conceito de projeto, do latim project, do francês projet, do alemão Projekt, do inglês project, do japonês じぎょう, do espanhol proyecto O conceito de projeto, do latim project, do francês projet, do alemão Projekt, do inglês project, do japonês じぎょう, do espanhol proyecto O conceito de projeto, do latim project, do francês projet, do alemão Projekt, do inglês project, do japonês じぎょう, do espanhol proyecto O conceito de projeto, do latim project, do francês projet, do alemão Projekt, do inglês project, do japonês じぎょう, do espanhol proyecto</p>
+        </div>
+
+<!--Andamento do Projeto-->
+        <div class="andamento" id="andamento">
+            <h1 class="titulo_andamento">Andamento</h1>
+            <div class="caixa_da_checkbox" id="caixa_da_checkbox1">
+                <input type="checkbox" id="meta_1" class="checkbox" onclick="progresso()" >
+                <label for="meta_1" class="texto_meta" id="texto_meta1">Meta 1</label>
+
+                <!--botao de editar a meta-->
+                <button onclick=" editar_meta(1)", class="botao_editar", id = "botao_de_editar_meta">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+                <!--botao de remover a meta-->
+                <button onclick=" remover_meta(1)", class="botao_remover", id = "botao_de_remover_meta">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+<!--botao de adicionar metas-->
+            <button onclick="adicionar_meta()" class="botao" , id="botao_de_adicionar_meta">
+                <i class="bi-plus-circle"></i>
+            </button>
+        </div>
+
+<!--Link para o trellor-->
+        <div class ="link_trello">
+            <h1 class="titulo_trello">Link para o Trello </h1>
+            <a href="#" class="ancora_trello">
+                <i class="fa-brands fa-trello"></i>
+            </a>
+        </div>
+
+<!--Componentes usados-->
+        <div class="caixa_componentes" id="caixa_componentes">
+            <h1 class="titulo_componentes">Componentes Usados</h1>
+            <div class="lista_de_componentes">
+                <a href="inventario.html" class="componente"> <p class="quantidade">X</p> <p class="nome_componente">componente_1</p></a>
+                <a href="#" class="componente"> <p class="quantidade">X</p> <p class="nome_componente">componente_2</p></a>
+                <a href="#" class="componente"> <p class="quantidade">X</p> <p class="nome_componente">componente_3</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--Esse script chama uma funcao do javascript.-->
+<script></script>
+</html>
+
+
+<!--Joao Felipe Silva Damasceno 2022-->

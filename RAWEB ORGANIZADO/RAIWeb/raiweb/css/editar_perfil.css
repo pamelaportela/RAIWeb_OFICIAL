@@ -1,0 +1,174 @@
+*{
+    background-color: #05053F;
+}
+body{
+    width: 100% ;
+    height: 100%;
+    display: flex;
+}
+
+h1{
+    font-size: 130%;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    color: #09CCCC;
+    margin-right: 15%;
+    margin-top: 0.8%;
+}
+
+textarea{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    width: 50%;
+    margin-left: 30%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+button{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    background-color: purple;
+}
+
+button:hover{
+    background-color: #09CCCC;
+    color: #05053F;
+}
+/*barra de navegacao*/
+.barra_de_navegacao_superior{
+    width: 100%;
+    border-bottom: 5px solid #09CCCC ;
+    position: fixed;
+}
+
+.caixa_da_barra_de_navegacao{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.caixa_de_logo_raitec{
+    height: 100%;
+    width: 50%;
+}
+
+
+.imagem_logo_raitec {
+    width: 100%;
+}
+
+.caixa_de_perfil_membro{
+    width: 18%;
+    margin-left: 80%;
+}
+
+.imagem_de_perfil{
+    width: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100%;
+}
+
+.imagem_de_perfil:hover{
+    border-color: #09CCCC;
+}
+
+/*CORPO DA PAGINA*/
+
+.corpo_da_pagina{
+    width: 100%;
+    margin-top: 5%;
+    height: 500px;
+    text-align: center;
+}
+
+/** editar foto de perfil**/
+.caixa_de_editar_foto{
+    margin-right: 10%;
+
+}
+
+.botao_editar_foto_de_perfil{
+    border-color: transparent;
+    width: 12%;
+    font-family: 'Cairo', sans-serif;
+    font-size:130%;
+    font-weight: bold;
+    color: #09CCCC;
+    margin-left: 15%;
+    background-color: #05053F;
+    /**XX position: absolute; XX**/
+}
+
+
+.botao_editar_foto_de_perfil:hover{
+    color:white;
+    background-color: transparent;
+
+}
+
+
+.foto_de_perfil{
+    width: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100%;
+}
+
+/**
+.caixa_da_imagem_de_lapiz{
+    position: relative;
+    width: 100%;
+}
+
+.imagem_secreta_de_lapiz{
+    width: 7%;
+    border-style: solid;
+    border-color: transparent;
+    margin-left: 12%;
+    margin-top: 1.5%;
+    opacity: 0;
+}
+.imagem_secreta_de_lapiz:hover{
+    opacity: 1;
+
+}
+**/
+/**mudar nome**/
+
+.caixa_de_mudar_nome{
+    margin-top: 8%;
+    margin-right:20%
+}
+
+/**mudar senha**/
+
+.nova_senha{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    margin-left: 33%;
+    border: none;
+    outline: none;
+    resize: none;   color: white;
+    height: 30px;
+    width: 50%;
+  
+} ::-ms-reveal {
+    filter: invert(100%);
+  }
+.caixa_de_mudar_restantes{
+    margin-top: 0;
+    margin-right: 20%;
+}
+
+

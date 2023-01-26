@@ -1,0 +1,333 @@
+/*desings gerais*/
+*{
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    font-size: large;
+    
+}
+body{
+    height: 100%;
+    background-color: #05053F;
+}
+
+span{
+    position: relative; 
+    color: #05053F;
+    bottom:3px;
+    right:3px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    font-size: xx-large;
+    background-color: transparent;
+    display: inline-block;
+    opacity: 0;
+
+}
+
+button{
+    width: 75px;
+    border: 3px solid black;
+    border-radius: 30px;
+    color: #05053F;
+}
+
+
+/*barra de navegacao*/
+.barra_de_navegacao_superior{
+    width: 100%;
+    border-bottom: 5px solid #09CCCC ;
+    position: fixed;
+}
+
+.caixa_da_barra_de_navegacao{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.caixa_de_logo_raitec{
+    height: 100%;
+    width: 50%;
+}
+
+
+.imagem_logo_raitec {
+    width: 100%;
+}
+
+.caixa_de_perfil_item{
+    width: 18%;
+    margin-left: 80%;
+}
+
+.imagem_de_perfil{
+    width: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100%;
+}
+
+.imagem_de_perfil:hover{
+    border-color: #09CCCC;
+}
+
+
+
+/*Corpo do site*/
+
+
+.corpo_da_pagina{
+    width: 100%;
+    margin-top: 3%;
+    height: 500px;
+    text-align: center;
+}
+
+
+.caixa_de_itens{  /* <!---Caixa da parte de itens--> */
+    width: 720px;
+    display: block;
+    height: 500px;
+    border-top: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: #09CCCC;
+    margin-left: 2%;
+}
+
+
+/* lugar onde ficam os filtros */
+.caixa_dos_filtros_por_status{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    display: block;
+    width: 700px;
+    background-color:transparent;
+}
+
+.barra_de_procurar{
+    background-color: white;
+    border-radius: 100px;
+}
+
+/* CSS DOS BOTOES DE FILTRO */
+.caixa_dos_filtros_por_status > button{
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-radius:10px ;
+    display: inline-block;
+}
+.caixa_dos_filtros_por_status>button:hover{
+    border: solid;
+    border-width: 5px ;
+    border-color: purple;
+}
+
+/* .filtro:focus{
+ background-color: rgba(136, 3, 136, 0.733);;
+ color: white;
+
+} */
+
+/* parte de itens */
+
+.caixa_lista_de_itens{
+    width: 900px;
+    height: 495px;
+    overflow-y: scroll;
+}
+
+.item_da_lista{
+    display: block;
+    background-color: transparent;
+    width: 900;
+    height: 120px;
+}
+
+
+.caixa_da_checklist{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 4px solid black;
+}
+
+.caixa_da_checklist:hover{
+    border-color: #5c09ad;
+}
+
+input.quantidade_requisitada{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    bottom: 42.5%;
+}
+
+
+input.quantidade_requisitada::-webkit-outer-spin-button,
+input.quantidade_requisitada::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+input.checklist{
+    position: relative; 
+    bottom:120%; 
+    right:15%;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    
+}
+
+.dados_do_item{
+    display: inline-block;
+    background-color: white;
+    margin-top: 5%;
+    border-radius:30px ;
+    width: 600px;
+    height: 100px;
+}
+
+
+/* elementos que aparecem dentro da caixa do item */
+
+.caixa_nome{
+    position: relative;
+    bottom: 30%;
+    background-color: transparent;
+    display: inline-block;
+    width: 340px;
+    height: 100px;
+    margin-left: 2%;
+}
+
+
+.nome_item{
+    background-color: transparent;
+    color: purple;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    font-size: x-large;
+    -webkit-text-stroke: 0.25px black;
+    display: block;
+}
+.quantidade{
+    background-color: transparent;
+    display: block;
+    text-align: left;
+}
+
+.caixa_de_tags{
+    height: 100px;
+    width: 230px;
+    margin-top: 1%;
+    background-color: transparent;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.status{
+    display: inline-block;
+    background-color: #5c09ad ;
+    text-align: center;
+    color: white;
+    width: 100px ;
+    min-width: 80px ;
+    height: 30px;
+    border-radius: 5px;
+    border: solid;
+    border-color: black;
+    text-align: center;
+/* essas configuracoes colocam os 3 pontos no final */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Botoes de aceitar ou negar solicitacao */
+
+.negar, .aceitar{
+    position: relative;
+    bottom: 50px;
+    height: 40px;
+    font-size: medium;
+}
+.aceitar:hover{
+    background-color: rgb(4, 169, 4);
+    color: white;
+    border-color: #5c09ad;
+}
+
+.negar:hover{
+    background-color: rgb(219, 0, 0);
+    color: white;
+    border-color: #5c09ad;
+    
+}
+
+.caixa_metade_1_da_parte_dos_itens{
+    display: inline-table;
+    width: 600px;
+    height: 100%;
+    margin-bottom: 1%;
+}
+
+.resultados{
+    color:#09CCCC;
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    width: 500px;
+    margin-left: 30%;
+}
+
+
+.solicitar_editar{
+    background-color: purple;
+    color: white;
+    width: fit-content;
+    height: 40px;
+    margin-right: 0.5%;
+}
+
+.solicitar_editar:hover{
+    background-color: #09CCCC;
+    color: black;
+}
+/* CONFIGURACOES BARRA DE ROLAGEM */
+/* width */
+.caixa_lista_de_itens::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  .caixa_lista_de_itens::-webkit-scrollbar-track {
+    border: 3px solid  #09CCCC;
+    border-radius: 30px;
+  }
+  
+  /* Handle */
+  .caixa_lista_de_itens::-webkit-scrollbar-thumb {
+    background: #09CCCC;
+    border-radius: 100px;
+
+  }
+  
+  /* Handle on hover */
+  .caixa_lista_de_itens::-webkit-scrollbar-thumb:hover {
+    border: solid;
+    border-color: purple;
+  }
